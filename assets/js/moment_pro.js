@@ -36,15 +36,15 @@ if (typeof moment === "undefined" && typeof require === 'function') {
         if (dDiff) {
             result.push(pluralize(dDiff, 'day'));
         }
-        if (hourDiff) {
-            result.push(pluralize(hourDiff, 'hour'));
-        }
-        if (minDiff) {
-            result.push(pluralize(minDiff, 'minute'));
-        }
-        if (secDiff) {
-            result.push(pluralize(secDiff, 'second'));
-        }
+        // if (hourDiff) {
+        //     result.push(pluralize(hourDiff, 'hour'));
+        // }
+        // if (minDiff) {
+        //     result.push(pluralize(minDiff, 'minute'));
+        // }
+        // if (secDiff) {
+        //     result.push(pluralize(secDiff, 'second'));
+        // }
 
         return result.join(STRINGS.delimiter);
     }

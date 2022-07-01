@@ -32,6 +32,15 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+h1.open-sans,
+h2.open-sans,
+h3.open-sans,
+h4.open-sans,
+h5.open-sans,
+h6.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
