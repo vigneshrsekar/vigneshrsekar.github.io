@@ -1248,5 +1248,10 @@ section {
   line-height: 2;
 }
 .mail-to {
-  color: #272829;;
+  color: #272829;
+}
+
+.company-name img {
+  height: 48px;
+  vertical-align: middle;
 }
