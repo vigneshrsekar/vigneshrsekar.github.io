@@ -1261,6 +1261,26 @@ section {
 }
 
 .company-name img {
-  height: 48px;
+  width: 30px;
   vertical-align: middle;
+}
+
+.company-name img.aspire_logo{
+  width: 50px;
+}
+
+.company-name img.iexceed_logo{
+  width: auto;
+  height: 20px;
+}
+
+.company-name img.omnificence_logo{
+  width: auto;
+    height: 15px;
+    background: #0e1a66;
+}
+
+.company-name img.mindtree_logo{
+  width: auto;
+    height: 20px;
 }
