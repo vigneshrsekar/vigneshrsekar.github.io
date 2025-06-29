@@ -518,6 +518,10 @@ section {
   color: #45505b;
 }
 
+.project-platform{
+text-align: right;
+}
+
 .skills .progress .skill .val {
   float: right;
   font-style: normal;
@@ -911,6 +915,18 @@ section {
   fill: #ffa76e;
 }
 
+.iconbox-yellow i {
+  color: #ffbb2c;
+}
+
+.iconbox-yellow:hover .icon i {
+  color: #fff;
+}
+
+.iconbox-yellow:hover .icon path {
+  fill: #ffbb2c;
+}
+
 .iconbox-pink i {
   color: #e80368;
 }
@@ -945,6 +961,18 @@ section {
 
 .services .iconbox-red:hover .icon path {
   fill: #ff5828;
+}
+
+.services .iconbox-Seafoam i {
+  color: #9FE2BF;
+}
+
+.services .iconbox-Seafoam:hover .icon i {
+  color: #fff;
+}
+
+.services .iconbox-Seafoam:hover .icon path {
+  fill: #9FE2BF;
 }
 
 .services .iconbox-teal i {
@@ -1283,4 +1311,9 @@ section {
 .company-name img.mindtree_logo{
   width: auto;
     height: 20px;
+}
+
+
+.spliter {
+  color: #0563bb;
 }

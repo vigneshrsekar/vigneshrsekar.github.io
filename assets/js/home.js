@@ -1,6 +1,16 @@
 
 var currentDate = new Date();
 
+function scrollIntoView(){
+    let myTimeout = setTimeout(() => {
+        document.getElementById('main').scrollIntoView();
+        clearTimeout(myTimeout);
+      }, 3000);
+     
+   
+}
+
+
 function loadYrOfExperience() {
     var firstDay = new Date("02-22-2017");
     var exp = getExperience(firstDay, currentDate, true);
@@ -24,6 +34,9 @@ function loadYrOfExperience() {
         currency: false,
         separator: false,
     });
+
+    
+    
 
    
     var expString = getExperience(firstDay, currentDate, false);
@@ -74,3 +87,4 @@ function getExperience(startDate, endDate, type) {
 
 loadYrOfExperience();
 loadIndividualExp();
+scrollIntoView();
