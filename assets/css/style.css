@@ -537,34 +537,98 @@ h6.open-sans {
   stroke: rgba(88, 166, 255, 0.15);
 }
 
-/* Code bracket symbols floating */
-.hero-equip-item.bracket {
+/* Code syntax snippets floating */
+.hero-equip-item.code-syntax {
   font-family: 'Courier New', monospace;
-  font-weight: bold;
-  color: rgba(88, 166, 255, 0.15);
-  font-size: 36px;
-  text-shadow: 0 0 8px rgba(88, 166, 255, 0.05);
+  font-weight: 600;
+  font-size: 13px;
+  color: rgba(88, 166, 255, 0.12);
+  text-shadow: 0 0 6px rgba(88, 166, 255, 0.04);
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  border-left: 2px solid rgba(88, 166, 255, 0.06);
+  padding-left: 8px;
 }
 
-.hero-equip-item.bracket-1 {
-  top: 20%;
-  left: 25%;
+.hero-equip-item.code-syntax .keyword {
+  color: rgba(255, 121, 198, 0.15);
+}
+
+.hero-equip-item.code-syntax .variable {
+  color: rgba(241, 250, 140, 0.12);
+}
+
+.hero-equip-item.code-syntax .operator {
+  color: rgba(139, 233, 253, 0.12);
+}
+
+.hero-equip-item.code-syntax .string-val {
+  color: rgba(80, 250, 123, 0.12);
+}
+
+.hero-equip-item.code-syntax .method {
+  color: rgba(255, 184, 108, 0.12);
+}
+
+.hero-equip-item.code-syntax .comment {
+  color: rgba(98, 114, 164, 0.1);
+  font-style: italic;
+}
+
+.hero-equip-item.syntax-1 {
+  top: 18%;
+  left: 22%;
   animation-delay: 1s;
-  animation-duration: 17s;
+  animation-duration: 22s;
 }
 
-.hero-equip-item.bracket-2 {
-  top: 70%;
-  left: 75%;
+.hero-equip-item.syntax-2 {
+  top: 55%;
+  left: 72%;
   animation-delay: 4s;
-  animation-duration: 19s;
+  animation-duration: 25s;
 }
 
-.hero-equip-item.bracket-3 {
-  top: 50%;
-  left: 55%;
+.hero-equip-item.syntax-3 {
+  top: 35%;
+  left: 65%;
+  animation-delay: 7s;
+  animation-duration: 20s;
+}
+
+.hero-equip-item.syntax-4 {
+  top: 75%;
+  left: 15%;
+  animation-delay: 10s;
+  animation-duration: 23s;
+}
+
+.hero-equip-item.syntax-5 {
+  top: 10%;
+  left: 58%;
+  animation-delay: 2s;
+  animation-duration: 26s;
+}
+
+.hero-equip-item.syntax-6 {
+  top: 65%;
+  left: 50%;
+  animation-delay: 13s;
+  animation-duration: 21s;
+}
+
+.hero-equip-item.syntax-7 {
+  top: 42%;
+  left: 8%;
+  animation-delay: 5s;
+  animation-duration: 24s;
+}
+
+.hero-equip-item.syntax-8 {
+  top: 82%;
+  left: 60%;
   animation-delay: 8s;
-  animation-duration: 15s;
+  animation-duration: 27s;
 }
 
 @keyframes equipFloat {
@@ -712,7 +776,7 @@ h6.open-sans {
   margin: 0;
   font-size: 64px;
   font-weight: 700;
-  line-height: 1.1;
+  /* line-height: 1.1; */
   color: #e6edf3;
   background: linear-gradient(135deg, #58a6ff 0%, #79c0ff 50%, #a5d6ff 100%);
   -webkit-background-clip: text;
