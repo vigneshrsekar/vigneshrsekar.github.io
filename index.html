@@ -172,10 +172,33 @@
         </svg>
       </div>
 
-      <!-- Floating code brackets -->
-      <div class="hero-equip-item bracket bracket-1">{ }</div>
-      <div class="hero-equip-item bracket bracket-2">&#60;&#47;&#62;</div>
-      <div class="hero-equip-item bracket bracket-3">=></div>
+      <!-- Floating Java syntax snippets -->
+      <div class="hero-equip-item code-syntax syntax-1">
+        <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; items.size(); i++) { ... }
+      </div>
+      <div class="hero-equip-item code-syntax syntax-2">
+        <span class="keyword">if</span> (service.isAvailable()) { <span class="method">deploy</span>(); }
+      </div>
+      <div class="hero-equip-item code-syntax syntax-3">
+        users.<span class="method">stream</span>().<span class="method">filter</span>(User::isActive).<span
+          class="method">toList</span>();
+      </div>
+      <div class="hero-equip-item code-syntax syntax-4">
+        <span class="keyword">return</span> Optional.ofNullable(result).<span class="method">orElseThrow</span>();
+      </div>
+      <div class="hero-equip-item code-syntax syntax-5">
+        <span class="keyword">public</span> record ApiResponse&lt;T&gt;(T data, String message) { }
+      </div>
+      <div class="hero-equip-item code-syntax syntax-6">
+        orderEvents.<span class="method">forEach</span>(event -&gt; kafka.<span class="method">send</span>(event));
+      </div>
+      <!-- <div class="hero-equip-item code-syntax syntax-7">
+        <span class="keyword">@Service</span> <span class="keyword">public class</span> InventoryService { ... }
+      </div> -->
+      <div class="hero-equip-item code-syntax syntax-8">
+        <span class="keyword">try</span> { transaction.<span class="method">commit</span>(); } <span
+          class="keyword">catch</span> (Exception ex) { ... }
+      </div>
 
     </div>
 
@@ -210,7 +233,7 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <div class="section-divider"></div>
+          <!-- <div class="section-divider"></div> -->
           <p>
             Experienced Software Engineer with a demonstrated history of working in the information technology and
             services industry.
@@ -270,7 +293,7 @@
 
         <div class="section-title">
           <h2>Skills</h2>
-          <div class="section-divider"></div>
+          <!-- <div class="section-divider"></div> -->
           <p>Experienced in various technologies like Web applications, Hybrid Applications, Web APIs, and Database
             design and implementation</p>
         </div>
@@ -344,7 +367,7 @@
 
         <div class="section-title">
           <h2>Resume</h2>
-          <div class="section-divider"></div>
+          <!-- <div class="section-divider"></div> -->
           <p>
             <span class="spliter">&#91;</span>Technical Team Lead<span class="spliter">&#93;</span>
             <span class="spliter">&#91;</span>Software Design & Architecture<span class="spliter">&#93;</span>
@@ -503,7 +526,7 @@
 
         <div class="section-title">
           <h2>Projects</h2>
-          <div class="section-divider"></div>
+          <!-- <div class="section-divider"></div> -->
           <p>Involved in the requirement study, coding, unit testing, bug fixing, release, & deployment in various
             projects.</p>
         </div>
@@ -679,7 +702,7 @@
 
         <div class="section-title">
           <h2>Domains</h2>
-          <div class="section-divider"></div>
+          <!-- <div class="section-divider"></div> -->
           <p>Experienced in various domains like Banking, Healthcare, Logistics, & more.</p>
         </div>
 
@@ -800,7 +823,7 @@
 
         <div class="section-title">
           <h2>Awards</h2>
-          <div class="section-divider"></div>
+          <!-- <div class="section-divider"></div> -->
           <p>Awarded for dedication and consistent performance.</p>
         </div>
 
@@ -886,7 +909,7 @@
 
         <div class="section-title">
           <h2>Facts</h2>
-          <div class="section-divider"></div>
+          <!-- <div class="section-divider"></div> -->
         </div>
 
         <div class="row">
@@ -934,7 +957,7 @@
 
         <div class="section-title">
           <h2>Contact</h2>
-          <div class="section-divider"></div>
+          <!-- <div class="section-divider"></div> -->
           <p>Let's connect! Feel free to reach out for collaboration, opportunities, or just a conversation.</p>
         </div>
 
@@ -987,9 +1010,9 @@
             class="bx bxl-skype"></i></a>
         <a href="https://github.com/vigneshrsekar" target="_blank" title="GitHub"><i class="bx bxl-github"></i></a>
       </div>
-      <div class="copyright">
+      <!-- <div class="copyright">
         &copy; <span id="year"></span> Vignesh Sekar. All Rights Reserved.
-      </div>
+      </div> -->
     </div>
   </footer>
 
