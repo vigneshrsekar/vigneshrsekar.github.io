@@ -1,15 +1,19 @@
-
 var currentDate = new Date();
 
-function scrollIntoView(){
-    let myTimeout = setTimeout(() => {
-        document.getElementById('main').scrollIntoView();
-        clearTimeout(myTimeout);
-      }, 3000);
-     
-   
-}
+// Set dynamic copyright year
+document.addEventListener('DOMContentLoaded', function () {
+    var yearSpan = document.getElementById('year');
+    if (yearSpan) {
+        yearSpan.textContent = currentDate.getFullYear();
+    }
+});
 
+function scrollIntoView() {
+    let myTimeout = setTimeout(() => {
+        document.getElementById('main').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        clearTimeout(myTimeout);
+    }, 3000);
+}
 
 function loadYrOfExperience() {
     var firstDay = new Date("02-22-2017");
@@ -35,13 +39,8 @@ function loadYrOfExperience() {
         separator: false,
     });
 
-    
-    
-
-   
     var expString = getExperience(firstDay, currentDate, false);
     document.getElementById("full-experience").innerText = expString;
-
 }
 
 function loadIndividualExp() {
@@ -50,7 +49,7 @@ function loadIndividualExp() {
         { eleId: "mindtree-exp", startDay: new Date("05-24-2021"), endDay: new Date("06-22-2022") },
         { eleId: "iexed-exp", startDay: new Date("05-02-2019"), endDay: new Date("06-18-2021") },
         { eleId: "omnificence-exp", startDay: new Date("02-20-2017"), endDay: new Date("04-29-2019") },
-    ]
+    ];
 
     companyList.forEach(company => {
         var exp = getExperience(company.startDay, company.endDay, true);
@@ -69,8 +68,6 @@ function loadIndividualExp() {
             ele.innerText = res;
         }
     });
-
-
 }
 
 function pluralize(num, word) {
@@ -81,10 +78,26 @@ function getExperience(startDate, endDate, type) {
     var startDateObj = moment(startDate);
     var endDateObj = moment(endDate);
     var exp = moment.preciseDiff(endDateObj, startDateObj, type);
-    console.log(exp);
     return exp;
 }
 
 loadYrOfExperience();
 loadIndividualExp();
-scrollIntoView();
+
+// Delayed scroll with intersection observer for better performance
+if ('IntersectionObserver' in window) {
+    const heroObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                // Hero is no longer visible, no need for auto-scroll
+                clearTimeout(window.heroScrollTimeout);
+            }
+        });
+    });
+    const heroSection = document.querySelector('#hero');
+    if (heroSection) {
+        heroObserver.observe(heroSection);
+    }
+} else {
+    scrollIntoView();
+}
