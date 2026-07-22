@@ -1442,6 +1442,8 @@ section {
   border: 1px solid rgba(0, 0, 0, 0.04);
   position: relative;
   overflow: hidden;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .services .icon-box::before {
@@ -1474,6 +1476,25 @@ section {
   justify-content: center;
   transition: ease-in-out 0.3s;
   position: relative;
+}
+
+/* Ensure full width on mobile */
+@media (max-width: 768px) {
+  .services .icon-box {
+    width: 100% !important;
+    padding: 40px 15px 40px 15px;
+    margin-bottom: 25px;
+  }
+
+  .services .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .services .row>[class*="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .services .icon-box .icon i {
